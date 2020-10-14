@@ -98,7 +98,7 @@ html {
   font-size: 1rem;
 }
 
-body {
+html body {
   font-family: 'Montserrat', sans-serif;
   background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
   background-position: top right, bottom left;
@@ -122,14 +122,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem;
 }
 
-body .heading {
+html body .heading {
   font-size: 1.5rem;
   color: #494c5f;
 }
 
-body .switch {
+html body .switch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,7 +145,7 @@ body .switch {
   margin: 1.5rem auto;
 }
 
-body .cards-container {
+html body .cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +158,7 @@ body .cards-container {
   margin-top: 1.5rem;
 }
 
-body .cards-container .card {
+html body .cards-container .card {
   font-size: 1rem;
   padding: 1.5em;
   background: white;
@@ -174,38 +175,38 @@ body .cards-container .card {
   transition: transform 3s ease-in-out, -webkit-transform 3s ease-in-out;
 }
 
-body .cards-container .card hr {
+html body .cards-container .card hr {
   border-top: 0.1px solid #b3b5c6;
 }
 
-body .cards-container .card__heading {
+html body .cards-container .card__heading {
   font-size: .75em;
 }
 
-body .cards-container .card__price {
+html body .cards-container .card__price {
   font-size: 4em;
   padding: .2em;
   color: #494c5f;
 }
 
-body .cards-container .card__price small {
+html body .cards-container .card__price small {
   font-size: .5em;
   margin: auto 0;
   vertical-align: middle;
   margin-right: .2em;
 }
 
-body .cards-container .card__list {
+html body .cards-container .card__list {
   margin-bottom: .2em;
   list-style: none;
 }
 
-body .cards-container .card__list div {
+html body .cards-container .card__list div {
   font-size: .7em;
   margin: .8em;
 }
 
-body .cards-container .card button {
+html body .cards-container .card button {
   width: 100%;
   padding: .8em;
   background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
@@ -221,14 +222,14 @@ body .cards-container .card button {
   border: .5px solid white;
 }
 
-body .cards-container .card button:hover {
+html body .cards-container .card button:hover {
   background: transparent;
   cursor: pointer;
   border: 0.5px solid #696fdd;
   color: #696fdd;
 }
 
-body .cards-container .card#professional {
+html body .cards-container #professional {
   margin: 0 -1em;
   padding: 2.5em 1.5em;
   color: white;
@@ -237,27 +238,27 @@ body .cards-container .card#professional {
   z-index: 1;
 }
 
-body .cards-container .card#professional .card__price {
+html body .cards-container #professional .card__price {
   color: white;
 }
 
-body .cards-container .card#professional button {
+html body .cards-container #professional button {
   background: white;
   color: #696fdd;
 }
 
-body .cards-container .card#professional button:hover {
+html body .cards-container #professional button:hover {
   background: transparent;
   color: white;
   border-color: white;
 }
 
-body .cards-container .card.monthly {
+html body .cards-container .card.monthly {
   -webkit-animation: spin-scale 3s ease-in-out;
           animation: spin-scale 3s ease-in-out;
 }
 
-body .cards-container .card.annually {
+html body .cards-container .card.annually {
   -webkit-animation: spin-scale-opp 3s ease-in-out;
           animation: spin-scale-opp 3s ease-in-out;
 }
@@ -322,27 +323,84 @@ body .cards-container .card.annually {
   }
 }
 
-body footer {
+html body footer {
   width: 100vw;
   position: absolute;
   bottom: 10px;
 }
 
-body footer p.attribution {
+html body footer p.attribution {
   text-align: center;
   font-size: .65rem;
   max-width: 400px;
   margin: 0 auto;
 }
 
-body footer p.attribution .svg {
+html body footer p.attribution .svg {
   width: 15%;
   min-width: 60px;
   margin: 0px auto;
   margin-bottom: -5px;
 }
 
-body footer p.attribution .svg:hover {
-  fill: #ff673b;
+html body footer p.attribution .svg:hover {
+  fill: #696fdd;
+}
+
+@media screen and (max-width: 52.5rem) {
+  html {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 46.875rem) {
+  html {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 41.25rem) {
+  html {
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 36.25rem) {
+  html {
+    font-size: .6rem;
+  }
+}
+
+@media screen and (max-width: 31.25rem) {
+  html {
+    font-size: .9rem;
+  }
+  html body {
+    height: initial;
+    padding: 3rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  html body .cards-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html body .cards-container .card {
+    margin-bottom: 2rem;
+    font-size: .9em;
+  }
+  html body .cards-container #professional {
+    padding: 1.5em;
+    margin: 0 .2em;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 24.375rem) {
+  html body .cards-container .card {
+    font-size: .8em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
