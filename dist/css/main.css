@@ -123,11 +123,14 @@ html body {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
+  overflow-y: auto;
+  padding-top: 1rem;
 }
 
 html body .heading {
   font-size: 1.5rem;
   color: #494c5f;
+  margin-top: 1rem;
 }
 
 html body .switch {
@@ -155,7 +158,8 @@ html body .cards-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+  margin: 1.5rem 0;
 }
 
 html body .cards-container .card {
@@ -163,6 +167,7 @@ html body .cards-container .card {
   padding: 1.5em;
   background: white;
   margin: 0 .2em;
+  margin-bottom: 1rem;
   color: #6d708d;
   border-radius: .4em;
   -webkit-box-shadow: 0px 5px 15px #d8daf9;
@@ -325,8 +330,8 @@ html body .cards-container .card.annually {
 
 html body footer {
   width: 100vw;
-  position: absolute;
-  bottom: 10px;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
 }
 
 html body footer p.attribution {

@@ -30,11 +30,14 @@ html{
         justify-content: center;
         align-items: center;
         padding: 1rem;
+        overflow-y: auto;
+        padding-top: 1rem;
     
     
         .heading{
             font-size: 1.5rem;
             color: $DarkGrayishBlue;
+            margin-top: 1rem;
         }
     
         .switch{
@@ -50,13 +53,15 @@ html{
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 1.5rem;
+            padding-bottom: 2rem;
+            margin: 1.5rem 0;
     
             .card{
                 font-size: 1rem;
                 padding: 1.5em;
                 background: white;
                 margin: 0 .2em;
+                margin-bottom: 1rem;
                 color: $GrayishBlue;
                 border-radius: .4em;
                 box-shadow: 0px 5px 15px lighten($color: $Blue1, $amount: 12%);
@@ -172,8 +177,8 @@ html{
     
         footer{
             width: 100vw;
-            position: absolute;
-            bottom: 10px;
+            margin-top: 2rem;
+            margin-bottom: .5rem;
             
     
             p.attribution{
