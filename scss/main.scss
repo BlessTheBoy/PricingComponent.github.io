@@ -229,6 +229,38 @@ html{
                     margin: 0 .2em;
                     margin-bottom: 2rem;
                 }
+
+                .card.monthly{
+                    animation: spin-scale 3s ease-in-out;
+                }
+        
+                .card.annually{
+                    animation: spin-scale-opp 3s ease-in-out;
+                }
+        
+                @keyframes spin-scale { 
+                    0%{
+                        transform: rotateY(0deg) scale(1);
+                    }
+                    50%{
+                        transform: rotateY(360deg) scale(.7);
+                    }
+                    100% { 
+                        transform: rotateY(720deg) scale(1) ;
+                    }
+                }
+        
+                @keyframes spin-scale-opp { 
+                    100%{
+                        transform: rotateY(0deg) scale(1);
+                    }
+                    50%{
+                        transform: rotateY(360deg) scale(.7);
+                    }
+                    0% { 
+                        transform: rotateY(720deg) scale(1);
+                    }
+                }
             }
         }
     }

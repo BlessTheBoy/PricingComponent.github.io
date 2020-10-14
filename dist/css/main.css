@@ -396,6 +396,70 @@ html body footer p.attribution .svg:hover {
     margin: 0 .2em;
     margin-bottom: 2rem;
   }
+  html body .cards-container .card.monthly {
+    -webkit-animation: spin-scale 3s ease-in-out;
+            animation: spin-scale 3s ease-in-out;
+  }
+  html body .cards-container .card.annually {
+    -webkit-animation: spin-scale-opp 3s ease-in-out;
+            animation: spin-scale-opp 3s ease-in-out;
+  }
+  @-webkit-keyframes spin-scale {
+    0% {
+      -webkit-transform: rotateY(0deg) scale(1);
+              transform: rotateY(0deg) scale(1);
+    }
+    50% {
+      -webkit-transform: rotateY(360deg) scale(0.7);
+              transform: rotateY(360deg) scale(0.7);
+    }
+    100% {
+      -webkit-transform: rotateY(720deg) scale(1);
+              transform: rotateY(720deg) scale(1);
+    }
+  }
+  @keyframes spin-scale {
+    0% {
+      -webkit-transform: rotateY(0deg) scale(1);
+              transform: rotateY(0deg) scale(1);
+    }
+    50% {
+      -webkit-transform: rotateY(360deg) scale(0.7);
+              transform: rotateY(360deg) scale(0.7);
+    }
+    100% {
+      -webkit-transform: rotateY(720deg) scale(1);
+              transform: rotateY(720deg) scale(1);
+    }
+  }
+  @-webkit-keyframes spin-scale-opp {
+    100% {
+      -webkit-transform: rotateY(0deg) scale(1);
+              transform: rotateY(0deg) scale(1);
+    }
+    50% {
+      -webkit-transform: rotateY(360deg) scale(0.7);
+              transform: rotateY(360deg) scale(0.7);
+    }
+    0% {
+      -webkit-transform: rotateY(720deg) scale(1);
+              transform: rotateY(720deg) scale(1);
+    }
+  }
+  @keyframes spin-scale-opp {
+    100% {
+      -webkit-transform: rotateY(0deg) scale(1);
+              transform: rotateY(0deg) scale(1);
+    }
+    50% {
+      -webkit-transform: rotateY(360deg) scale(0.7);
+              transform: rotateY(360deg) scale(0.7);
+    }
+    0% {
+      -webkit-transform: rotateY(720deg) scale(1);
+              transform: rotateY(720deg) scale(1);
+    }
+  }
 }
 
 @media screen and (max-width: 24.375rem) {

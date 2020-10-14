@@ -14,12 +14,10 @@ let masterAnnually = "399.99";
 
 toggleSwitch.addEventListener('change', (e) => {
     if (toggleSwitch.checked) {
-        console.log('swith is checked');
         transformMonthly(basicCard, basicMonthly);
         transformMonthly(professinalCard, professionalMonthly);
         transformMonthly(masterCard, masterMonthly);
     } else {
-        console.log('swith is unchecked');
         transformAnnually(basicCard, basicAnnually);
         transformAnnually(professinalCard, professionalAnnually);
         transformAnnually(masterCard, masterAnnually);
